@@ -1,10 +1,7 @@
-import glob
-import time
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from datetime import datetime, timedelta
-import requests
 import plotly.graph_objects as go
 import streamlit as st
 import seaborn as sns
@@ -65,7 +62,7 @@ coolwarm_data.columns = ["USDJPY","USA500IDXUSD","BTCUSD", "XAUUSD", "BRENTCMDUS
 correlation_matrix = coolwarm_data.corr()
 
 # Streamlit felület
-st.title("Correlation Matrix Heat Map")
+st.title("NFP and corrleations")
 st.write("Impact of the NFP announcement on trade")
 
 # Hőtérkép megjelenítése
